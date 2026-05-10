@@ -107,7 +107,6 @@ function CrosswordsContent() {
           url: p.comingSoon ? null : `https://crosshare.org/crosswords/${p.slug}`,
         })),
         { text: "All my puzzles on Crosshare", url: "https://crosshare.org/gojoego" },
-        { text: "Puzzmo", url: "https://www.puzzmo.com/today/" },
       ]} />
     </>
   );
@@ -345,7 +344,7 @@ function BooksPage({ onNav, dark, setDark }) {
           </div>
           <div className="bp-header-right">
             <div className="bp-intro-text">
-              <p>Inspired by <a href="https://aaronson.org/full-moon-albums/" target="_blank" rel="noopener noreferrer">Aaron Aaronson's Full Moon Albums</a>, this is a place where I log some of the best books that I read each year.</p>
+              <p>Inspired by <a href="https://aaronson.org/full-moon-albums/" target="_blank" rel="noopener noreferrer">Adam Aaronson's Full Moon Albums</a>, this is a place where I log some of the best books that I read each year.</p>
               <p>Because of my job (English teacher), my demeanor (outgoing and bookish), and my podcast (<a href="https://www.youdontknowlitpodcast.com/" target="_blank" rel="noopener noreferrer">You Don't Know Lit</a>), I end up reading…and then recommending…a good deal of books. I often, though, find myself at a loss when people ask me about my favorites.</p>
               <p>This page is meant to solve that problem.</p>
             </div>
