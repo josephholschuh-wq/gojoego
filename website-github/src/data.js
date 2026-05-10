@@ -49,6 +49,13 @@ export const CROSSWORD_PUZZLES = [
 ];
 
 export const WISDOM = [
+  // on purpose
+  { quote: `What could be sadder than to reach my age and realize that you hadn't made the most of what you'd been given?`, attr: `Robert Gottlieb`, theme: `on purpose` },
+  { quote: `To be nobody-but-yourself — in a world which is doing its best, night and day, to make you everybody else — means to fight the hardest battle which any human being can fight.`, attr: `E.E. Cummings`, theme: `on purpose` },
+  { quote: `Where is you yourself to be found? Always in the deepest enchantment you have experienced.`, attr: `Hugo von Hofmannsthal`, theme: `on purpose` },
+  { quote: `Don't worry what other people think about you because they don't.`, attr: `Mom`, theme: `on purpose` },
+  { quote: `The spirit of the universe is inside of you; you know what to do.`, attr: `Wayne Dyer`, theme: `on purpose` },
+  
   // on perspective
   { quote: `Cynicism always sounds smart while optimism needs defending. That doesn't mean optimism is stupid. It just means cynicism is easy.`, theme: `on perspective` },
   { quote: `Pessimists tend to be right, but optimists tend to succeed.`, theme: `on perspective` },
@@ -62,15 +69,9 @@ export const WISDOM = [
   { quote: `Listen to others, even to the dull and the ignorant; they too have their story.`, attr: `Desiderata`, theme: `on kindness` },
   { quote: `Against stupidity, the very gods themselves contend in vain.`, attr: `Schiller`, theme: `on kindness` },
 
-  // on being yourself
-  { quote: `To be nobody-but-yourself — in a world which is doing its best, night and day, to make you everybody else — means to fight the hardest battle which any human being can fight.`, attr: `E.E. Cummings`, theme: `on being yourself` },
-  { quote: `Where is you yourself to be found? Always in the deepest enchantment you have experienced.`, attr: `Hugo von Hofmannsthal`, theme: `on being yourself` },
-  { quote: `Don't worry what other people think about you because they don't.`, attr: `Mom`, theme: `on being yourself` },
-  { quote: `The spirit of the universe is inside of you; you know what to do.`, attr: `Wayne Dyer`, theme: `on being yourself` },
-
   // on being alive
   { quote: `Every hundred years, new people.`, attr: `Japanese proverb`, theme: `on being alive` },
-  { quote: `Memento mori, obviously.`, theme: `on being alive` },
+  { quote: `Memento mori, obviously.`, attr: `The Stoics`, theme: `on being alive` },
   { quote: `We move through the world feeling inevitable, and yet we are the flotsam of otherwise — how many other ways the atoms could have fallen between the Big Bang and this body.`, theme: `on being alive` },
   { quote: `I believe a leaf of grass is no less than the journeywork of the stars.`, attr: `Walt Whitman, Leaves of Grass`, theme: `on being alive` },
   { quote: `Sometimes a kind of glory lights up the mind of a man... a man pours outward, a torrent of him, and yet he is not diminished.`, attr: `John Steinbeck, East of Eden`, theme: `on being alive` },
@@ -92,7 +93,7 @@ export const WISDOM = [
   { quote: `It's okay to be sad and happy at the same time.`, theme: `on difficulty` },
   { quote: `Feelings are real.`, theme: `on difficulty` },
 
-  // on growing
+  // on growth
   { quote: `Make your interests gradually wider and more impersonal, until bit by bit the walls of the ego recede, and your life becomes increasingly merged in the universal life.`, attr: `Bertrand Russell`, theme: `on growing` },
   { quote: `Curiosity is the purest form of insubordination.`, attr: `Nabokov`, theme: `on growing` },
   { quote: `Travel is fatal to prejudice, bigotry, and narrow-mindedness.`, attr: `Mark Twain`, theme: `on growing` },
@@ -109,7 +110,7 @@ export const WISDOM = [
   { quote: `You've got my eyebrows... that's too bad.`, attr: `Grandpa Harvey`, theme: `on aging` },
   { quote: `What could be sadder than to reach my age and realize that you hadn't made the most of what you'd been given?`, attr: `Robert Gottlieb`, theme: `on aging` },
 
-  // not taking yourself too seriously
+  // on not taking yourself too seriously
   { quote: `Romance is like ranch dressing. It's a wonderful condiment, but a terrible entree.`, attr: `Al Gore, via Ian De Jong`, theme: `not taking yourself too seriously` },
   { quote: `I don't know what's wrong with me, but it's working.`, attr: `Hank Green`, theme: `not taking yourself too seriously` },
   { quote: `I am a bear of very little brain.`, attr: `A.A. Milne, Winnie the Pooh`, theme: `not taking yourself too seriously` },
