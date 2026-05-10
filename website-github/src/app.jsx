@@ -463,7 +463,6 @@ function QuotesPage({ section, onNav, dark, setDark }) {
           ))}
           <div className="qp-count">{section.quotes.length} entries</div>
         </div>
-        <div className="qp-count">{section.quotes.length} entries</div>
         <div className="qp-list">
           {section.quotes.map((q, i) => (
             <div key={i} className="qp-item">
