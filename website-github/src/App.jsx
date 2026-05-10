@@ -461,16 +461,38 @@ function QuotesPage({ section, onNav, dark, setDark }) {
           {section.links?.map((l, i) => (
             <a key={i} href={l.url} target="_blank" rel="noopener noreferrer" className="qp-intro" style={{display:"block", marginTop:"0.5rem", color:"var(--ink)", textDecoration:"underline", textUnderlineOffset:"3px"}}>{l.text} ↗</a>
           ))}
-          <div className="qp-count">{section.quotes.length} entries</div>
+          <div className="qp-count">{section.quotes.length} entries · {section.themes ? section.themes.length + " themes" : ""}</div>
         </div>
-        <div className="qp-list">
-          {section.quotes.map((q, i) => (
-            <div key={i} className="qp-item">
-              <p className="qp-quote">{typeof q === "string" ? q : q.quote}</p>
-              {q.attr && <div className="qp-attr">{q.attr}</div>}
+        {section.themes
+          ? section.themes.map(theme => {
+              const items = section.quotes.filter(q => q.theme === theme);
+              if (!items.length) return null;
+              return (
+                <div key={theme} className="qp-section">
+                  <div className="qp-section-head">
+                    <span className="qp-section-title">{theme}</span>
+                    <span className="qp-section-count">{items.length}</span>
+                  </div>
+                  <div className="qp-list">
+                    {items.map((q, i) => (
+                      <div key={i} className="qp-item">
+                        <p className="qp-quote">{q.quote}</p>
+                        {q.attr && <div className="qp-attr">{q.attr}</div>}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })
+          : <div className="qp-list">
+              {section.quotes.map((q, i) => (
+                <div key={i} className="qp-item">
+                  <p className="qp-quote">{typeof q === "string" ? q : q.quote}</p>
+                  {q.attr && <div className="qp-attr">{q.attr}</div>}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+        }
       </div>
     </>
   );
