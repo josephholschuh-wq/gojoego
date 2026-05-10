@@ -22,7 +22,7 @@ async function fetchBooks() {
 function SEO({ path }) {
   useEffect(() => {
     const titles = {
-      "/": "Joe Holschuh — English Teacher, Podcaster & Crossword Constructor",
+      "/": "Joe Holschuh — English Teacher and Other Things",
       "/books": "Full Moon Books — Joe Holschuh",
       "/speeches": "Speeches — Joe Holschuh",
       "/crosswords": "Crosswords — Joe Holschuh",
@@ -147,7 +147,7 @@ function HomeBookGallery({ onNav, books, loading }) {
   const [selected, setSelected] = useState(null);
   return (
     <>
-      <p className="intro">Inspired by Aaron Aaronson's Full Moon Albums — most recent first. Click any cover.</p>
+      <p className="intro">Inspired by Adam Aaronson's Full Moon Albums — most recent first. Click any cover.</p>
       {loading && <div className="loading-msg">loading from Notion…</div>}
       {!loading && books.length > 0 && (
         <div className="book-grid">
