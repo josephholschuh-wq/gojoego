@@ -3,6 +3,54 @@
   publish = "dist"
   functions = "netlify/functions"
 
+# ---- Domain consolidation ----
+# All roads lead to https://josephholschuh.com — one canonical home,
+# so search engines pool trust instead of splitting it four ways.
+# Rules for domains not attached to this site simply never fire.
+
+[[redirects]]
+  from = "https://joeholschuh.com/*"
+  to = "https://josephholschuh.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.joeholschuh.com/*"
+  to = "https://josephholschuh.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://gojoego.co/*"
+  to = "https://josephholschuh.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.gojoego.co/*"
+  to = "https://josephholschuh.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://gojoego.com/*"
+  to = "https://josephholschuh.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.gojoego.com/*"
+  to = "https://josephholschuh.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.josephholschuh.com/*"
+  to = "https://josephholschuh.com/:splat"
+  status = 301
+  force = true
+
+# ---- SPA fallback (must stay last) ----
 [[redirects]]
   from = "/*"
   to = "/index.html"
